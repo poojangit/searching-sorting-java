@@ -36,4 +36,14 @@ public class MyBinaryTree<K extends Comparable<K>> {
             printInOrder((node.getRight()));
         }
     }
+
+    //UC2 - Check if all are added with using size method
+    public int size(){
+        return getSizeRecursively(root);
+    }
+    private int getSizeRecursively(INode<K> node){
+        if(node == null)
+            return 0;
+        return 1+getSizeRecursively(node.getLeft()) + getSizeRecursively(node.getRight());
+    }
 }
