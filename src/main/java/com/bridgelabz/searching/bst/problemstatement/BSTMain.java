@@ -20,5 +20,7 @@ public class BSTMain {
         bst.printTree(); //print in sorted order
         //get the size of the tree
         System.out.println("\nTotal Nodes in the tree : " + bst.size());
+        //search a node
+        System.out.println("Is 63 present? " + bst.search(63));
     }
 }
