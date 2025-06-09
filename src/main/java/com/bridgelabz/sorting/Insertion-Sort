@@ -1,0 +1,33 @@
+Insertion Sort
+
+Insertion Sort works by building a sorted portion of the array one element at a time by picking
+an element and inserting it at the correct position within the sorted portion.
+
+Concept:
+● Builds the sorted array one element at a time by picking an element and inserting it in
+the correct position.
+● Works efficiently for small and nearly sorted arrays.
+
+Working Mechanism:
+1. Consider the first element as sorted.
+2. Pick the next element and compare it with the elements in the sorted portion.
+3. Shift elements in the sorted portion to make space for the new element.
+4. Insert the picked element into its correct position.
+5. Repeat this process until all elements are sorted.
+
+Performance Analysis:
+● Best Case (Already Sorted): O(n) (Minimal shifts required)
+● Average Case: O(n²) (Nested loops for insertion)
+● Worst Case (Reverse Sorted): O(n²)
+● Space Complexity: O(1) (In-place sorting)
+● Stability: Stable (Maintains the order of equal elements)
+
+Use Cases:
+● Efficient for small datasets or nearly sorted arrays (adaptive sorting).
+● Used in scenarios where insertions happen frequently, such as real-time systems.
+
+Time Complexity:
+● Best Case (Already Sorted): O(n)
+● Average Case: O(n²)
+● Worst Case (Reverse Sorted): O(n²)
+● Space Complexity: O(1) (In-place Sorting)
