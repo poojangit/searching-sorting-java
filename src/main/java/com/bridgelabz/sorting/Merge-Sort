@@ -1,0 +1,31 @@
+3. Merge Sort (Divide and Conquer)
+Merge Sort follows the Divide and Conquer approach, where an array is recursively divided
+into two halves, sorted individually, and merged back together.
+
+Concept:
+● Divides the array into two halves, sorts them recursively, and merges them.
+● Stable sorting algorithm.
+
+Working Mechanism:
+1. Divide: Split the array into two halves until each sub-array contains a single element.
+2. Conquer: Recursively sort both halves.
+3. Merge: Merge the two sorted halves by comparing elements and placing them in the
+correct order.
+
+Performance Analysis:
+● Best Case: O(n log n) (Always splits the array into halves)
+● Average Case: O(n log n) (Consistent performance across cases)
+● Worst Case: O(n log n)
+● Space Complexity: O(n) (Extra space required for merging)
+● Stability: Stable (Maintains the order of equal elements)
+
+Use Cases:
+● Suitable for large datasets due to its predictable O(n log n) time complexity.
+● Used in applications where stability is required, such as sorting linked lists.
+● Preferred when sorting datasets that cannot be modified in-place.
+
+Time Complexity:
+● Best Case: O(n log n)
+● Average Case: O(n log n)
+● Worst Case: O(n log n)
+● Space Complexity: O(n) (Uses extra space for merging)
