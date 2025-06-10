@@ -1,0 +1,8 @@
+Problem Statement:
+A company receives job applications with different expected salary demands. Implement Heap
+Sort to sort these salary demands in ascending order.
+
+Hint:
+● Build a Max Heap from the array.
+● Extract the largest element (root) and place it at the end.
+● Re-heapify the remaining elements and repeat until sorted.
