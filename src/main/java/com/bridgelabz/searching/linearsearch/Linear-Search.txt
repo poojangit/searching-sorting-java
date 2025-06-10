@@ -1,0 +1,82 @@
+--------------Linear Search------------
+
+# What is Linear Search?
+Linear search is one of the simplest searching algorithms used to find a target value within a list
+or array. It works by checking each element in the list one by one until the target element is
+found or the end of the list is reached.
+
+How Linear Search Works:
+1. Sequential Check:
+The algorithm starts from the first element of the array (or list) and compares it with the
+target value.
+2. Element Comparison:
+If the current element matches the target, the algorithm returns the index of the element
+(or any other information such as the element itself). If the element does not match, the
+algorithm proceeds to the next element in the list.
+3. Termination:
+
+The search process continues until either:
+○ The target is found and its position is returned.
+○ The entire list is traversed without finding the target, in which case the algorithm
+returns a result indicating that the target does not exist in the list (usually -1 or
+null).
+
+Characteristics of Linear Search:
+
+● Unsorted Lists:
+Linear search can be applied to both sorted and unsorted lists or arrays. This is a key
+difference from more efficient algorithms like Binary Search, which requires the list to
+be sorted.
+
+● Time Complexity:
+The time complexity of linear search is O(n), where n is the number of elements in the
+list. This means that in the worst case, the algorithm will check each element once.
+○ Best-case: The best case occurs when the target element is found at the first
+position, giving a time complexity of O(1).
+○ Worst-case: The worst case occurs when the target element is either absent or
+located at the last position in the list, giving a time complexity of O(n).
+
+● Space Complexity:
+Linear search operates in O(1) space, meaning it requires a constant amount of
+additional space regardless of the size of the input list. This is because the algorithm
+does not create any new data structures during its execution.
+
+● Comparisons:
+The number of comparisons made by a linear search can vary depending on the position
+of the target element. In the worst case, the number of comparisons is equal to the
+number of elements in the list, but in the best case, it is just 1.
+
+When to Use Linear Search?
+● Simple Lists or Arrays:
+Linear search is ideal for simple scenarios where the list is not very large or the list does
+not need to be sorted beforehand.
+● Unsorted Data:
+Linear search can be used when the data is unsorted and there is no time or
+requirement to sort it before searching.
+● Small Data Sets:
+For small-sized datasets, the overhead of more complex algorithms (like binary search)
+may not be necessary. Linear search is straightforward and easy to implement.
+● Multiple Occurrences:
+Linear search can also be used if you need to find all occurrences of a target value, as it
+simply checks each element without any restrictions on duplicates.
+
+Advantages of Linear Search:
+1. Simplicity:
+Linear search is easy to implement and understand. It&#39;s often used when other search
+algorithms (like binary search) are not needed or are too complex.
+2. Works with Unsorted Data:
+Unlike binary search, which requires sorted data, linear search works regardless of
+whether the data is sorted or not.
+3. No Additional Space Required:
+Linear search has O(1) space complexity, meaning it doesn’t require additional memory
+allocation, unlike algorithms that might need auxiliary data structures.
+
+Disadvantages of Linear Search:
+1. Inefficiency for Large Data:
+Linear search can be inefficient for large datasets since it may need to traverse the
+entire list in the worst case. For larger data, algorithms like Binary Search (for sorted
+data) or Hashing are often preferred due to their better time complexity.
+2. Slow Performance in Comparison to Other Algorithms:
+Since it checks each element sequentially, its performance deteriorates with the size of
+the list. This makes it less suitable for large datasets, especially when faster alternatives
+exist.
